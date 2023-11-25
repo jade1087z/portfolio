@@ -1,0 +1,52 @@
+#header {
+    display: flex;
+}
+.logo {
+    display: flex;
+    width: 40%;
+}
+.logo h4 {
+    font-family: 'Josefin Slab';
+    font-size: 30px;
+    line-height: 80px;
+    font-weight: 600;
+}
+.logo p {
+    font-family: 'GmarketSans';
+    line-height: 95px;
+    margin-left: 100px;
+}
+
+.logo img {
+    width: 90px;
+    height: 80px;
+}
+nav {
+    width: 60%;
+    line-height: 95px;
+}
+#header nav .menu {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+#header nav .menu a {
+    padding: 2rem;
+    position: relative;
+    color: var(--black200);
+}
+#header nav .menu a:before {
+    content: '';
+    position: absolute;
+    width: calc(100% - 40px);
+    background-color: var(--black600);
+    height: 2px;
+    left: 20%;
+    bottom: 30%;
+    transform: scaleX(0);
+    transition: all 0.2s;
+
+}
+#header nav .menu a:hover::before {
+    transform: scale(1);
+} 
