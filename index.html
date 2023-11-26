@@ -3,100 +3,156 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    
 </head>
 
 <body>
     <div id="wrap">
         <header id="header">
-            <div class="logo">
-                <img src="assets/img/Group 29.png" alt="">
-                <h4>DEVELOPER</h4>
-                <p>korea,seoul <em>00:00</em></p>
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="/">
+                        <img src="assets/img/Group 29.png" alt="">
+                        <h4>DEVELOPER</h4>
+                        <p>korea,seoul <em>00:00</em></p>
+                    </a>
+                </div>
+                <nav class="header__nav" role="navigation" aria-label="메인 메뉴">
+                    <ul class="menu">
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">work</a></li>
+                        <li><a href="#">skill</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+
             </div>
-            <nav id="nav">
-                <ul class="menu">
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">skill</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </nav>
         </header>
 
         <main id="main" role="main">
-            <div class="main__text">
-                <h2><img src="assets/img/Rectangle 11167.png" alt="">FRONTEND DEVELOPER I WANT TO BE</h2>
-                <span>도전은 언제나 두렵지만, 가장 큰 위험은 위험없는 삶이다 !
-                    도전하는 것을 두려워하지 않는 신입 프론트엔드 개발자, 김찬미입니다. 누구의 인생이나 그렇듯 저 또한 지금까지 도전의 연속이었습니다.
-                    제 전공과 직업을 버리고 새로운 길로 들어서기로 마음 먹었을 때, 두렵지 않냐는 질문들이 많았습니다. 적은 나이도 아니었고, 그동안 해왔던 것들이
-                    있었기 때문입니다. 안정적인 상태에서 새로운 도전을 하는 것이 쉬운 결정은 아니었지만, 저의 진정한 적성과 흥미를 찾아 더 나아가기 위해
-                    시작하게 되었습니다. 지금은 부족한 것이 많은 저이지만, 끊임없이 배우고 공부할 것입니다. </span>
-            </div>
+
+            <section class="intro__text">
+                <div class="intro__inner">
+                    <div class="intro__title"><img src="assets/img/Rectangle 11167.png" alt="">FRONTEND DEVELOPER <br>I
+                        WANT
+                        TO BE</div>
+                    <div class="intro__desc">도전은 언제나 두렵지만, 가장 큰 위험은 위험없는 삶이다 !
+                        도전하는 것을 두려워하지 않는 신입 프론트엔드 개발자, 김찬미입니다. 누구의 인생이나 그렇듯 저 또한 지금까지 도전의 연속이었습니다.
+                        제 전공과 직업을 버리고 새로운 길로 들어서기로 마음 먹었을 때, 두렵지 않냐는 질문들이 많았습니다. 적은 나이도 아니었고, 그동안 해왔던 것들이
+                        있었기 때문입니다. 안정적인 상태에서 새로운 도전을 하는 것이 쉬운 결정은 아니었지만, 저의 진정한 적성과 흥미를 찾아 더 나아가기 위해
+                        시작하게 되었습니다. 지금은 부족한 것이 많은 저이지만, 끊임없이 배우고 공부할 것입니다. </div>
+                </div>
+            </section>
 
             <section id="slide">
                 <div class="slider__wrap">
-                    <div class="slider">
-                        <img src="" alt="">
+                    <div class="slider s1">
+                        <div class="img"></div>
+                    </div>
+                    <div class="slider s2">
+                        <div class="img"></div>
+                    </div>
+                    <div class="slider s3">
+                        <div class="img"></div>
+                    </div>
+                    <div class="slider s4">
+                        <div class="img"></div>
                     </div>
                 </div>
             </section>
+            <!-- my project  -->
 
-            <section id="">
-                <div class="arrow"></div>
-                <div class="text">
-                    <h2>From complex challenges to
-                        collaoborative partnerships</h2>
-                    <span>A holistic approach that builds impactful brand outcomes.</span>
-                    <span>Our team draws on decades of experience, turning complex
-                        creative challenges into collaborative brand partnerships.
-                        We integrate with your team to learn your business, adopt
-                        your brand, and create motion identities, systems, and
-                        applications that transform how you communicate in today’s
-                        digital environment.</span>
-                    <a href="#" class="more">Let’s work together</a>
+            <section id="team__project">
+                <div class="project__wrap">
+                    <div class="wrap">
+                        <div class="icon">
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h2 class="text__main">From complex challenges to
+                            collaoborative partnerships</h2>
+                        <div class="text__desc">
+                            <p class="text__title">A holistic approach that builds impactful brand outcomes.</p>
+                            <p>Our team draws on decades of experience, turning complex
+                                creative challenges into collaborative brand partnerships.
+                                We integrate with your team to learn your business, adopt
+                                your brand, and create motion identities, systems, and
+                                applications that transform how you communicate in today’s
+                                digital environment.</p>
+                            <div class="project__more">
+                                <div>
+                                    <a href="#" class="more">
+                                        <p>Let’s work together</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <!--  -->
+            <!-- team project end -->
 
-            <section>
-                <div class="left"></div>
-                <div class="right">
-                    <div class="contents1">
-                        <p class="num">1</p>
-                        <div class="">
-                            <p>What do you think makes front-end development attractive?</p>
-                            <p>프론트엔드의 영역은 코드와 디자인이 만나는 독특한 공간이기에,
-                                웹 개발에 있어 프론트엔드가 할 수 있는 일이 정말 많다고 생각합니다. 그만큼 부딪혀야 할 일이 많아 험난할 것이라 예상되지만 개발의 전반적인 부분을 담당할
-                                수 있다는 점 때문에, 한 켠으로는 설레는 일이라 생각됩니다.
-                            </p>
+            <section id="problem">
+                <div class="problem__inner">
+                    <div class="left">
+                        <div class="problem__img"></div>
+                    </div>
+                    <div class="right">
+                        <div class="contents__wrap">
+                            <div class="contents c1">
+                                <p class="num">01.</p>
+                                <div class="contents__text">
+                                    <p class="contents__title">What do you think makes front-end development attractive?
+                                    </p>
+                                    <p class="contents__desc">프론트엔드의 영역은 코드와 디자인이 만나는 독특한 공간이기에,
+                                        웹 개발에 있어 프론트엔드가 할 수 있는 일이 정말 많다고 생각합니다. 그만큼 부딪혀야 할 일이 많아 험난할 것이라 예상되지만 개발의 전반적인
+                                        부분을
+                                        담당할
+                                        수 있다는 점 때문에, 한 켠으로는 설레는 일이라 생각됩니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contents c2">
+                                <p class="num">02.</p>
+                                <div class="contents__text">
+                                    <p class="contents__title">What do you think makes front-end development attractive?
+                                    </p>
+                                    <p class="contents__desc">프론트엔드의 영역은 코드와 디자인이 만나는 독특한 공간이기에,
+                                        웹 개발에 있어 프론트엔드가 할 수 있는 일이 정말 많다고 생각합니다. 그만큼 부딪혀야 할 일이 많아 험난할 것이라 예상되지만 개발의 전반적인
+                                        부분을
+                                        담당할
+                                        수 있다는 점 때문에, 한 켠으로는 설레는 일이라 생각됩니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contents c3">
+                                <p class="num">03.</p>
+                                <div class="contents__text">
+                                    <p class="contents__title">What do you think makes front-end development attractive?
+                                    </p>
+                                    <p class="contents__desc">프론트엔드의 영역은 코드와 디자인이 만나는 독특한 공간이기에,
+                                        웹 개발에 있어 프론트엔드가 할 수 있는 일이 정말 많다고 생각합니다. 그만큼 부딪혀야 할 일이 많아 험난할 것이라 예상되지만 개발의 전반적인
+                                        부분을
+                                        담당할
+                                        수 있다는 점 때문에, 한 켠으로는 설레는 일이라 생각됩니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="problem__more project__more">
+                            <div></div>
+                            <div>
+                                <a href="#" class="more">
+                                    <p>Let’s work together</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="contents2">
-                        <p class="num">2</p>
-                        <div class="">
-                            <p>What do you think makes front-end development attractive?</p>
-                            <p>프론트엔드의 영역은 코드와 디자인이 만나는 독특한 공간이기에,
-                                웹 개발에 있어 프론트엔드가 할 수 있는 일이 정말 많다고 생각합니다. 그만큼 부딪혀야 할 일이 많아 험난할 것이라 예상되지만 개발의 전반적인 부분을 담당할
-                                수 있다는 점 때문에, 한 켠으로는 설레는 일이라 생각됩니다.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="contents3">
-                        <p class="num">3</p>
-                        <div class="">
-                            <p>What do you think makes front-end development attractive?</p>
-                            <p>프론트엔드의 영역은 코드와 디자인이 만나는 독특한 공간이기에,
-                                웹 개발에 있어 프론트엔드가 할 수 있는 일이 정말 많다고 생각합니다. 그만큼 부딪혀야 할 일이 많아 험난할 것이라 예상되지만 개발의 전반적인 부분을 담당할
-                                수 있다는 점 때문에, 한 켠으로는 설레는 일이라 생각됩니다.
-                            </p>
-                        </div>
-                    </div>
-                    <a href="#">Let's work together</a>
                 </div>
+
             </section>
             <!--  -->
 
@@ -165,7 +221,7 @@
                     <div class="me">
                         <img src="" alt="">
                     </div>
-                    <div class="infomation">
+                    <div class="">
                         <ul>
                             <li>GitHub</li>
                             <li>Phone</li>
@@ -179,4 +235,6 @@
     </div>
 </body>
 <script src="assets/js/hover.js"></script>
+<script src="assets/js/arrow.js"></script>
+
 </html>

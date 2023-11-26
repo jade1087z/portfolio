@@ -1,52 +1,91 @@
 #header {
-    display: flex;
-}
-.logo {
-    display: flex;
-    width: 40%;
-}
-.logo h4 {
-    font-family: 'Josefin Slab';
-    font-size: 30px;
-    line-height: 80px;
-    font-weight: 600;
-}
-.logo p {
-    font-family: 'GmarketSans';
-    line-height: 95px;
-    margin-left: 100px;
+    position: fixed;
+    left: 0;
+    top: -15px;
+    width: 100%;
+    z-index: 10000;
 }
 
-.logo img {
+.header__inner {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 1.7rem 1rem 1.7rem;
+}
+
+.header__logo {
+    width: 20%;
+}
+.header__logo a {
+    display: flex;
+    font-size: 2vh;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.4vh;
+    white-space: nowrap;
+}
+
+.header__logo a img {
     width: 90px;
     height: 80px;
 }
-nav {
-    width: 60%;
-    line-height: 95px;
+.header__logo a h4,
+.header__logo a p {
+    margin: auto;
 }
-#header nav .menu {
+.header__logo a h4 {
+    font-family: "Josefin Slab";
+    font-size: 22px;
+    font-weight: 600;
+}
+.header__logo a p {
+    margin-left: 40px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 35px;
+}
+.header__nav {
+    width: 80%;
     display: flex;
     justify-content: flex-end;
+    margin-top: 10px;
+}
+.header__nav .menu li {
+    display: inline;
+    width: 20%;
+    padding: 0 1rem 0 1rem;
     
 }
-#header nav .menu a {
-    padding: 2rem;
+.header__nav .menu li a {
+    font-size: 0.9rem;
+    font-weight: 600;
     position: relative;
-    color: var(--black200);
-}
-#header nav .menu a:before {
-    content: '';
-    position: absolute;
-    width: calc(100% - 40px);
-    background-color: var(--black600);
-    height: 2px;
-    left: 20%;
-    bottom: 30%;
-    transform: scaleX(0);
+    padding: 0.3rem;
     transition: all 0.2s;
-
+    font-family: var(--mainfont-gmarket);
+    color: var(--black200);
+    
 }
-#header nav .menu a:hover::before {
-    transform: scale(1);
-} 
+.header__nav .menu li a::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 9px);
+    height: 2px;
+    background-color: var(--black600);
+    left: 8%;
+    bottom: 0%;
+    transform: scaleX(0);
+    transition: all 0.3s;
+}
+.header__nav .menu li a:hover::before {
+    transform: scaleX(1);
+     
+}
+.header__nav .menu li a:hover {
+    color: var(--black600);
+}
+/* @media (max-width: 1600px) {
+    nav {
+    }
+} */

@@ -1,5 +1,7 @@
 :root {
     --mainfont-gmarket: "GmarketSans";
+    --font-s-core: "SCoreDream";
+    --font-nanum: "nanumSquareNeo";
     font-family: var(--mainfont-gmarket);
     font-size: 16px;
     line-height: 1.5;
@@ -31,12 +33,7 @@
     
 
 }
-@media (max-width: 800px) {
-    * {
-        font-size: 14px;
-        line-height: 1.4;
-    }
-}
+
 .box {
     border-radius: 10px;
     border: 1px solid var(--primary-color);
