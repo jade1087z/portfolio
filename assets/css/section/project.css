@@ -77,7 +77,7 @@
 .text p {
     width: 100%;
     font-size: 1.3vw;
-    font-family: var(--font-s-core);
+    
 }
 .project__more {
     width: 100%;
